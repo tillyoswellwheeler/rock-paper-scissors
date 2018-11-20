@@ -11,8 +11,9 @@ var draw = 0;
 
 $('button').click(function(event) {
   var play_you = this.getAttribute("value");
+  $("#play_you").text(play_you);
   return computer_thinks();
-  compare(play_you, play_machine);
+  // compare(play_you, play_machine);
 
 })
 
