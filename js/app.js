@@ -28,6 +28,7 @@ function win(userChoice, compChoice) {
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(compChoice)}${smallCompWord}. You win`;
+  
 }
 
 
@@ -41,8 +42,10 @@ function lose(userChoice, compChoice) {
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(compChoice)}${smallCompWord}. You lost`;
 }
 
-function draw() {
-  console.log("draw");
+function draw(userChoice, compChoice) {
+  const smallUserWord = "user".fontsize(3).sup();
+  const smallCompWord = "comp".fontsize(3).sup();
+  result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} no-one wins ${convertToWord(compChoice)}${smallCompWord}. It's a draw!`;
 }
 
 function game(userChoice) {
@@ -56,7 +59,7 @@ function game(userChoice) {
     case "rp":
     case "ps":
     case "sr":
-      lost(userChoice, compChoice);
+      lose(userChoice, compChoice);
       break;
     case "rr":
     case "pp":
