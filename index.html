@@ -2,31 +2,106 @@
 <html lang="en-GB">
 <head>
     <title>Rock Paper Scissors</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Quicksand:700" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet" />
 </head>
 
 <body>
 
-<h1>Rock Paper Scissors</h1>
-<button id="rock" value="rock">Rock</button>
-<button id="paper" value="paper">Paper</button>
-<button id="scissors" value="scissors">Scissors</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt='Panda logo.' /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#game">Play Game</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rules.html">Rules</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-<section>
-    <h2>Current move</h2>
-    <p>You: <span id="play_you"></span></p>
-    <p>Machine: <span id="play_machine"></span></p>
-</section>
+      <header>
+        <div class="jumbotron">
+          <div class="container">
+            <h1 class="display-4">Rock Paper Scissors</h1>
+            <p class="lead">Let the battles begin!</p>
+          </div>
+        </div>
+      </header>
+    
+    <div class="score-board">
+        <div class="badges" id="user-label">user</div>
+        <div class="badges" id="comp-label">comp</div>
+        <span id="user-score">0</span>: <span id="comp-score">0</span>
+    </div>
 
-<section>
-    <h2>Result</h2>
-    <h3>Verdict: <span id="verdict"></span></h3>
-    <p>Won: <span id="game_won">0</span></p>
-    <p>Lost: <span id="game_lost">0</span></p>
-    <p>Draw: <span id="game_draw">0</span></p>
-    <p>Played: <span id="game_played">0</span></p>
-</section>
+    <div class="results">
+
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="images/rock-1.png" alt="line drawing of a rock.">
+        </div>
+        <div class="choice" id="p">
+           <img src="images/paper-1.png" alt="line drawing of paper.">
+        </div>
+        <div class="choice" id="s">
+            <img src="images/scissors-1.png" alt="line drawing of scissors.">  
+        </div>    
+    </div>       
+        
+
+          
+          <div class="row">
+            <div class="col">
+                <button id="rock" class="r-p-s-button" value="rock">Rock<span class="icon-rock"></span></button>
+                <button id="paper" class="r-p-s-button" value="paper">Paper<span class="icon-paper"></span></button>
+               <button id="scissors" class="r-p-s-button" value="scissors">Scissors<span class="icon-scissors"></span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="moves" class="hide">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                    <h2>Current move</h2>
+                    <p>You: <span id="play_you"></span></p>
+                    <p>Machine: <span id="play_machine"></span></p>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <section id="results" class="hide">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                    <h2>Result</h2>
+                    <h3>Verdict: <span id="verdict"></span></h3>
+                    <p>Won: <span id="won">0</span></p>
+                    <p>Lost: <span id="lost">0</span></p>
+                    <p>Draw: <span id="draw">0</span></p>
+                    <p>Played: <span id="game_played">0</span></p>
+               </div>
+              </div>
+            </div>
+      </section>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/engine.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

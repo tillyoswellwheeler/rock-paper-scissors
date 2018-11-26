@@ -1,0 +1,140 @@
+/* CSS Stylesheet */
+
+/* Colours  */
+
+body {
+  background-color: #212529;
+}
+
+.jumbotron {
+  background-color: blanchedalmond;
+}
+
+/* Global Styles */
+
+.score-board {
+  border: 3px solid white;
+  width: 200px;
+  margin: 20px auto;
+  padding: 15px 30px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.badges {
+  background: blanchedalmond;
+  color: #212529;
+  font-size: 22px;
+  padding: 2px 10px;
+  font-family: 'Montserrat' sans-serif;
+}
+
+#user-label {
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+#comp-label {
+  position: absolute;
+  top: 25px;
+  right: -25px;
+}
+
+.results {
+  font-size: 40px;
+  color: #fff;
+}
+
+.results p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.choices {
+  text-align: center;
+  margin: 50px 0;
+}
+.choice {
+  border: 4px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 45px;
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: #212529;
+}
+
+
+
+/* Typography */
+
+.jumbotron h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 0;
+  }
+
+  .jumbotron p {
+    text-align: center;
+  
+  }
+
+/* Buttons */
+
+input:active,
+input:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+
+.hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+
+  .r-p-s-button {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    background: #212529;
+    border: none;
+    font-size: 3rem;
+    color: #fff;
+    margin: 0.5rem;
+  }
+
+  .icon-rock {
+    background: url(images/rock.png) no-repeat;
+    float: left;
+    width: 10px;
+    height: 40px;
+  }
+
+  .icon-paper {
+    background: url(images/paper.png) no-repeat;
+    float: left;
+    width: 10px;
+    height: 40px;
+  }
+
+  .icon-scissors {
+    background: url(images/scissors.png) no-repeat;
+    float: left;
+    width: 10px;
+    height: 40px;
+  }
+  
+
+/* Images */
+
