@@ -94,30 +94,6 @@ body {
 
 /* Buttons */
 
-input:active,
-input:focus {
-  outline: 0px !important;
-  -webkit-appearance: none;
-}
-
-.hide {
-    display: none;
-  }
-  
-  .show {
-    display: block;
-  }
-
-  .r-p-s-button {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 100%;
-    background: #212529;
-    border: none;
-    font-size: 3rem;
-    color: #fff;
-    margin: 0.5rem;
-  }
 
   .icon-rock {
     background: url(images/rock.png) no-repeat;
