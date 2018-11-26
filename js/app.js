@@ -28,7 +28,7 @@ function win(userChoice, compChoice) {
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(compChoice)}${smallCompWord}. You win`;
-  
+  document.getElementById(userChoice).classList.add('.green-glow')
 }
 
 
