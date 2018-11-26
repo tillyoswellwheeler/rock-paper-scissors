@@ -35,21 +35,21 @@ body {
 #user-label {
   position: absolute;
   top: 25px;
-  left: -25px;
+  left: -35px;
 }
 
 #comp-label {
   position: absolute;
   top: 25px;
-  right: -25px;
+  right: -35px;
 }
 
-.results {
+.result {
   font-size: 40px;
   color: #fff;
 }
 
-.results p {
+.result p {
   text-align: center;
   font-weight: bold;
 }
